@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Starbucks</title>
+	<link rel="icon" href="assets/images/logo.png" type="image/icon">
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js" crossorigin="anonymous"></script>
+	
+	<!-------------- CSS links ---------------->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SoDoSans|Helvetica|sans-serif">
+	<link rel="stylesheet" href="assets/styles/common.css">
+	<link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<!-------------------- Header -------------------------->
+		<div class="header-container">
+			<header class="header">
+				<section class="logo load_home_page">
+					<a href="#">
+						<img class="vertical-center" src="assets/images/logo.png" alt="logo-image">
+					</a>
+				</section>
+				<section class="header-menu">
+					<nav class="vertical-center">
+						<ul class="menu">
+							<li><a class="active" href="#home_page" id="load_home_page">Home</a></li>
+							<li><a href="#gift_page" id="load_gift_page">Gift</a></li>
+							<li><a href="#order_page" id="load_order_page">Order</a></li>
+							<li><a href="#">Pay</a></li>
+							<li><a href="#store_page" id="load_store_page">Store</a></li>
+						</ul>
+					</nav>
+				</section>
+				<section class="search-form">
+					<div class="input-section vertical-center">
+						<img src="assets/images/search.svg" alt="search-icon" tabindex="0">
+						<input type="text" placeholder="Looking for something specific?" />
+					</div>
+				</section>
+				<section class="profile-icon">
+					<img class="vertical-center" src="assets/images/profile-icon.svg" alt="profile-image">
+				</section>
+			</header>
+		</div>
+
+		<div id="home_page">
+			<iframe src="pages/home_page.html" id="home_page_iframe" scrolling="no"> </iframe>
+		</div>
+
+		<div id="gift_page">
+			<iframe src="pages/gift_page.html" scrolling="no"> </iframe>
+		</div>
+
+		<div id="order_page">
+			<iframe src="pages/order_page.html" scrolling="no"> </iframe>
+		</div>
+
+		<div id="store_page">
+			<iframe src="pages/store_page.html" scrolling="no"> </iframe>
+		</div>
+
+		<!-- <div id="footer">
+			<iframe src="pages/footer.html" scrolling="no"> </iframe>
+		</div> -->
+
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+			$('#load_home_page, .load_home_page').click(function () {
+				$("#home_page").show();
+				$("#load_home_page").addClass("active");
+				$("#gift_page, #order_page, #store_page").hide();
+				$("#load_gift_page, #load_order_page, #load_store_page").removeClass("active");
+			});
+			$('#load_gift_page').click(function () {
+				$("#gift_page").show();
+				$("#load_gift_page").addClass("active");
+				$("#home_page, #order_page, #store_page").hide();
+				$("#load_home_page, #load_order_page, #load_store_page").removeClass("active");
+			});
+			$('#load_order_page').click(function () {
+				$("#order_page").show();
+				$("#load_order_page").addClass("active");
+				$("#home_page, #gift_page, #store_page").hide();
+				$("#load_home_page, #load_gift_page, #load_store_page").removeClass("active");
+			});
+			$('#load_store_page').click(function () {
+				$("#store_page").show();
+				$("#load_store_page").addClass("active");
+				$("#home_page, #gift_page, #order_page").hide();
+				$("#load_home_page, #load_gift_page, #load_order_page").removeClass("active");
+			});
+		});
+		$(document).ready(function () {
+			$("#home_page").show();
+			$("#gift_page, #order_page, #store_page").hide();
+		});
+	</script>
+
+</body>
+
+</html>

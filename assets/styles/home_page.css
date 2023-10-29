@@ -1,0 +1,329 @@
+body {
+    margin: 0 !important;
+}
+
+/* ---------------------Green Panel---------------------- */
+
+.green-card-container {
+    width: 100vw;
+    height: 80px;
+    background-color: #1e3932;
+    color: #fff;
+    margin-top: 75px;
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+}
+
+.green-card {
+    margin: 0 10vw;
+}
+
+.green-card section {
+    display: inline-block;
+    height: 80px;
+    clear: both;
+    box-sizing: border-box;
+}
+
+/* Green Panel - Header */
+.panel-header {
+    width: 67vw;
+    float: left;
+}
+
+.panel-header h5 {
+    margin: 0;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Green Panel - Know more */
+.know-more {
+    width: 13vw;
+    text-align: center;
+    line-height: 80px;
+}
+
+.know-more button {
+    width: 96px;
+    height: 32px;
+    padding: 0;
+    font-size: 12px;
+    border-radius: 30px;
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #fff;
+}
+
+/* ---------------------Handcrafted Curations---------------------- */
+
+
+.handcrafted-curations-container {
+    width: 100vw;
+    height: 250px;
+    margin-top: 2em;
+}
+
+.handcrafted-curations {
+    margin-left: 10vw;
+    color: #1e3932;
+}
+
+/* Handcrafted Curations - Content  */
+
+.handcrafted-curations-content div {
+    float: left;
+    width: 14.5vw;
+}
+
+.item {
+    width: 115px !important;
+}
+
+.item img {
+    height: 108px;
+    width: 108px;
+    border-radius: 50%;
+    border: 1px solid #edebe9;
+    cursor: pointer;
+}
+
+.item p {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* --------------------- Promotional Banner ---------------------- */
+
+.promotion-container {
+    width: 100vw;
+}
+
+.promotion-banner {
+    margin: 0 10vw;
+    padding-top: 1em;
+    background-image: url(../images/starbucks-125.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+}
+
+.promotion-banner div {
+    display: inline-block;
+    line-height: 1.2;
+}
+
+/* World cup banner */
+.world-cup-banner {
+    width: 10vw;
+}
+
+.world-cup-banner img {
+    width: 100px;
+}
+
+/* Promotion content */
+.promotion-content {
+    width: 52vw;
+}
+
+.promotion-content p {
+    margin-top: 0;
+}
+
+/* Know more section */
+.know-more-section {
+    width: 16vw;
+    height: inherit;
+}
+
+.know-more-btn {
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+
+.know-more-btn button {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #00754a;
+    position: absolute;
+    bottom: 10%;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+}
+
+/* Button previous and button next */
+
+.btn-prev-promotion-banner {
+    width: 0vw;
+}
+
+.btn-prev-promotion-banner .btn-prev-img {
+    position: relative;
+    right: 38px;
+    bottom: 60px;
+}
+
+.btn-next-promotion-banner {
+    width: 0vw;
+}
+
+.btn-next-promotion-banner .btn-next-img {
+    position: relative;
+    bottom: 60px;
+    right: 23px
+}
+
+/* --------------------- Latest Offerings ---------------------- */
+
+.latest-offerings-container {
+    width: 100vw;
+    margin-top: 2em;
+}
+
+.latest-offerings {
+    margin: 0 10vw;
+}
+
+.latest-offerings-cards {
+    width: 100vw;
+}
+
+/* latest offerings card */
+
+.latest-offerings-cards .card1,
+.card2 {
+    width: 25.5vw;
+    margin-right: 2%;
+}
+
+.latest-offerings-cards .card3 {
+    width: 25vw;
+}
+
+.latest-offerings .card {
+    float: left;
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card .card-img {
+    height: 167px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover !important;
+}
+
+/* latest offerings card content */
+.card-content {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 12px 24px 18px;
+}
+
+.card-content .icon-veg {
+    height: 16px;
+    width: 16px;
+}
+
+/* Button previous and button next */
+.btn-prev-latest-offerings {
+    width: 0vw;
+    float: left;
+    line-height: 360px;
+}
+
+.btn-next-latest-offerings {
+    width: 0vw;
+}
+
+.btn-prev-latest-offerings .btn-prev-img {
+    position: relative;
+    top: 40px;
+    right: 38px;
+}
+
+.btn-next-latest-offerings {
+    width: 0vw;
+    line-height: 360px;
+}
+
+.btn-next-latest-offerings .btn-next-img {
+    position: relative;
+    right: 38px;
+    top: 38px;
+}
+
+/* -----------------------Media Queries------------------ */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .handcrafted-curations-container {
+        height: 350px;
+    }
+
+    .handcrafted-curations-content div {
+        width: 31.5vw;
+    }
+
+    .know-more-btn button {
+        height: 40px;
+        width: 100px;
+    }
+
+    .btn-next-promotion-banner .btn-next-img {
+        right: 5px !important;
+    }
+
+    .know-more-section {
+        width: 13vw;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    .know-more-btn button {
+        height: 40px;
+        width: 130px;
+    }
+
+    .btn-next-promotion-banner .btn-next-img {
+        right: 22px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1200px) {}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+
+    .green-card,
+    .promotion-banner,
+    .latest-offerings {
+        margin: 0 5vw;
+    }
+
+    .handcrafted-curations {
+        margin-left: 5vw;
+    }
+
+    .world-cup-banner {
+        width: 15vw;
+    }
+
+    .promotion-content {
+        width: 55vw;
+    }
+
+    .latest-offerings-cards .card1, .card2, .card3 {
+        width: 29vw !important;
+    }
+
+}

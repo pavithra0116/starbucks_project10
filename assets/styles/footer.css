@@ -1,0 +1,14 @@
+.body {
+    margin: 0 !important;
+}
+
+.footer_container {
+    width: 100vw;
+    background-color: #1e3932;
+    color: white;
+    height: 300px;
+}
+
+.footer {
+    margin: 0 10vw;
+}
